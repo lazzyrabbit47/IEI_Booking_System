@@ -122,7 +122,7 @@ body {
 }
 .nav_menu_content_div {
   .navigation_a_links_div {
-    margin-left: 100px;
+    margin-left: 35px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -173,14 +173,10 @@ body {
   @include themify($themes) {
     background: themed("primary_light");
   }
-  height: 380px;
-  width: 100%;
   padding: 20px;
   .room_pic {
-    height: auto;
-    width: auto;
     img {
-      height: 170px;
+      width:100%
     }
   }
 }

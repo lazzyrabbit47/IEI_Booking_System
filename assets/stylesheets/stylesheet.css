@@ -9,6 +9,7 @@
   font-weight: bold;
 }
 .btn {
+  padding: 0;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -31,7 +32,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
-  margin-left: 65px;
+  margin-left: 20px;
 }
 
 .user_drop_list_btn {
@@ -39,7 +40,7 @@
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: 50%;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .search_btn {
@@ -167,7 +168,7 @@ ul.user_drop_list_options li .divider {
 }
 
 .side_list_row .side_list_a_link {
-  margin-left: 50px;
+  margin-left: 3vw;
   transition: margin-left 150ms ease-in-out, font-weight 150ms ease-in-out;
   font-size: 2.4rem;
   font-weight: 100;
@@ -183,7 +184,7 @@ ul.user_drop_list_options li .divider {
   color: #fff;
 }
 .side_list_row:hover .side_list_a_link {
-  margin-left: 100px;
+  margin-left: 6vw;
   font-weight: 900;
 }
 
@@ -492,7 +493,7 @@ body main {
 }
 
 .nav_menu_content_div .navigation_a_links_div {
-  margin-left: 100px;
+  margin-left: 35px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -547,8 +548,6 @@ body main {
 }
 
 .room_card {
-  height: 380px;
-  width: 100%;
   padding: 20px;
 }
 .theme_my_blue .room_card {
@@ -560,12 +559,8 @@ body main {
 .theme_my_red .room_card {
   background: #E62E36;
 }
-.room_card .room_pic {
-  height: auto;
-  width: auto;
-}
 .room_card .room_pic img {
-  height: 170px;
+  width: 100%;
 }
 
 .room_details {
