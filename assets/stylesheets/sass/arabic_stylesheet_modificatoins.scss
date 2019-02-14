@@ -1,0 +1,35 @@
+.side {
+  margin-left: 75%;
+}
+main {
+  margin-right: 25%;
+}
+.nav_menu_contnet_div {
+  direction: rtl;
+  .navigation_a_links_div {
+    margin-right: 100px;
+  }
+}
+.navigation_a_links_div {
+    margin-right: 100px;
+}
+button.notification_btn {
+    margin-right: 65px;
+    margin-left: 0;
+}
+button.user_drop_list_btn {
+    margin-left:0;
+    margin-right: 20px;
+}
+.user_name_div {
+    margin-left: 0;
+}
+.sub_nav {
+    direction: rtl;
+}
+.rooms_cards_wrapper {
+    direction: rtl;
+    .room_card {
+        direction: initial;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Bookings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
+  <link rel="stylesheet" href="assets/stylesheets/stylesheet.css" />
+</head>
+
+<body>
+  <div class="row theme_my_blue">
+    <section class="side">
+      <div class="user_row_container">
+        <div class="user_row">
+          <div class="user_pic">
+            <img alt="user picture" src="assets/images/user.jpg" />
+          </div>
+          <div class="user_name_div">
+            <p>WELCOME,</p>
+            <a href="#">Shuiab Jamil</a>
+          </div>
+          <button class="btn notification_btn"></button>
+          <button class="btn user_drop_list_btn"></button>
+        </div>
+      </div>
+      <div class="user_drop_list">
+        <ul class="user_drop_list_options">
+          <li>
+            <a href="#">Profile</a>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+            <div class="divider"></div>
+          </li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </div>
+      <div class="side_list">
+        <ul>
+          <li>
+            <div class="side_list_row"><a class="side_list_a_link" href="dashboard.html"> Dashboard </a></div>
+          </li>
+          <li>
+            <div class="side_list_row">
+              <a class="side_list_a_link" href="my_reservations.html">Reservations</a>
+            </div>
+          </li>
+          <li>
+            <div class="side_list_row"><a class="side_list_a_link" href="my_bookings.html"> My Bookings </a></div>
+          </li>
+          <li>
+            <div class="side_list_row"><a class="side_list_a_link" href="my_messages.html"> My Messages </a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main>
+      <nav class="nav_menu">
+        <div class="nav_menu_content_div">
+          <div class="search_bar_div">
+            <input type="text" placeholder="Search by Room number, Date, Room Name...etc" />
+            <button class="btn search_btn">
+            </button>
+          </div>
+          <div class="navigation_a_links_div">
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="dashboard_ar.html">العربية</a>
+            <button value="blue" class="blue_theme"></button>
+            <button value="brown" class="brown_theme"></button>
+            <button value="grey" class="grey_theme"></button>
+          </div>
+        </div>
+      </nav>
+      <div class="room_div"></div>
+      <div id="calendar"></div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+
+    <script>
+      $(function () {
+        // page is now ready, initialize the calendar...
+        $("#calendar").fullCalendar();
+      });
+    </script>
+    <script src="script/my_script.js">
+    </script>
+  </div>
+</body>
+
+</html>

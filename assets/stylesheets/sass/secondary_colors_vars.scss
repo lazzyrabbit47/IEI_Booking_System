@@ -1,0 +1,12 @@
+//colors variables map
+$secondary_colors: (
+  my_green: #4cd964,
+  my_blue: #007aff,
+  my_yellow: #ffcc00,
+  my_red: #ff3b30,
+);
+
+@function secondary_colors($color_name) {
+  @return map-get($secondary_colors, $color_name)
+}
+

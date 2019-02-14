@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IEI Booking System</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!--
+      <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"/>
+    -->
+    <link rel="stylesheet" href="assets/stylesheets/index.css" />
+  </head>
+
+  <body>
+    <section class="side">
+      <div class="logo_container">
+        <img alt="iei_icon" src="assets/images/iei_logo.png" />
+      </div>
+      <h1 class="page_description">Directly book<br />meeting rooms</h1>
+      <form class="user_sign_in_form">
+        <p class="form_description_p">
+          Please, login to start your reservation
+        </p>
+        <div class="input_div_grid_container">
+          <div class="input_div">
+            <label for="email_address">Email Address</label>
+            <input type="email" id="email_address" />
+          </div>
+          <div class="input_div">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+        </div>
+        <div class="remember_me_and_forgot-password_flex_conainter">
+          <label class="remember_me_label" for="remember_me">
+            <input type="checkbox" id="remember_me" />
+            <span>Remember me</span>
+
+            
+          </label>
+          <a class="forgot_password_link" href="forgot_pass.html">Forgot Password</a>
+        </div>
+        <div class="sign_buttons_div">
+          <button class="sign_btn" type="submit">Sign in</button>
+            <a class="sign_link" href="./sign_up.html">Sign up</a>
+        </div>
+      </form>
+    </section>
+    <main>
+      <nav class="navigation_tabs">
+        <a href="">About us</a> <a href="">Contact us</a>
+        <a href="">View Rooms</a> <a href="">العربية</a>
+      </nav>
+      <div class="content_grid">
+        <div class="icon_div">
+          <div class="icon_container"><img alt="Chat Icon" src="assets/images/chat.png" /></div>
+        </div>
+        <div class="content_cell">
+          <h3>IEI Booking System</h3>
+          <p>
+            Great for booking and make appointments or schedule<br />appointments
+            for all proffessional and business entrepreneur.
+          </p>
+        </div>
+        <div class="icon_div">
+          <div class="icon_container"><img alt="Calender Icon" src="assets/images/calender.png" /></div>
+        </div>
+        <div class="content_cell">
+          <h3>Live Chat</h3>
+          <p>
+            Users are able to directly chat with system administrator<br />for
+            any enquires or queres.
+          </p>
+        </div>
+        <div class="icon_div">
+          <div class="icon_container">
+            <img alt="Calender Icon" src="assets/images/calender_check.png" />
+          </div>
+        </div>
+        <div class="content_cell">
+          <h3>Calendar View</h3>
+          <p>
+                Users are able to view sevices by day and months with calender view.<br/>
+                Users can view future services and book from calender.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

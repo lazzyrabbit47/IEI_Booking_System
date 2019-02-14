@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Bookings</title>
+</head>
+
+<body>
+    <div class="row theme_my_blue">
+        <section class="side">
+            <div class="user_row_container">
+                <div class="user_row">
+                    <div class="user_pic">
+                        <img alt="user picture" src="assets/images/user.jpg" />
+                    </div>
+                    <div class="user_name_div">
+                        <p>WELCOME,</p>
+                        <a href="#">Shuiab Jamil</a>
+                    </div>
+                    <button class="btn notification_btn"></button>
+                    <button class="btn user_drop_list_btn"></button>
+                </div>
+            </div>
+            <div class="user_drop_list">
+                <ul class="user_drop_list_options">
+                    <li>
+                        <a href="#">Profile</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+            <div class="side_list">
+                <ul>
+                    <li>
+                        <div class="side_list_row"><a class="side_list_a_link" href="dashboard.html"> Dashboard </a></div>
+                    </li>
+                    <li>
+                        <div class="side_list_row">
+                            <a class="side_list_a_link" href="my_reservations.html">Reservations</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="side_list_row"><a class="side_list_a_link" href="my_bookings.html"> My Bookings </a></div>
+                    </li>
+                    <li>
+                        <div class="side_list_row"><a class="side_list_a_link" href="my_messages.html"> My Messages </a></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <main class="main_view">
+            <nav class="nav_menu">
+                <div class="nav_menu_content_div">
+                    <div class="search_bar_div">
+                        <input type="text" placeholder="Search by Room number, Date, Room Name...etc" />
+                        <button class="btn search_btn">
+                        </button>
+                    </div>
+                    <div class="navigation_a_links_div">
+                        <a href="#">About us</a>
+                        <a href="#">Contact us</a>
+                        <a href="dashboard_ar.html">العربية</a>
+                        <button value="blue" class="blue_theme"></button>
+                        <button value="brown" class="brown_theme"></button>
+                        <button value="grey" class="grey_theme"></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="sub_nav">
+                <a class="total_link" href="#">
+                    <div class="total_link_div">
+                        <div>
+                            <p class="large_number">15</p>
+                            <p class="large_text">Total</br>Bookings</p>
+                        </div>
+                        <div>
+                            <p class="bottom_text">Total number of previous bookings</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="total_link left_margin">
+                    <div class="total_link_div">
+                        <div>
+                            <p class="large_number">8</p>
+                            <p class="large_text">Total</br>Rooms Available</p>
+                        </div>
+                        <div>
+                            <p class="bottom_text">Total number of availabe rooms to reserve</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="booking_list_table_div_wrapper">
+                <table class="booking_list_table">
+                    <thead class="booking_list_thead">
+                        <tr>
+                            <th>
+                                Room Name
+                            </th>
+                            <th>
+                                Booking Name
+                            </th>
+                            <th>
+                                Booking Email
+                            </th>
+                            <th>
+                                Booking Mobile
+                            </th>
+                            <th>
+                                Booking Date
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="booking_list_tbody">
+                        <tr>
+                            <td>
+                                College<br/> Meeting Room
+                            </td>
+                            <td>
+                                Momen Zakaria
+                            </td>
+                            <td>
+                                lazzyrabbit.47@gmail.com
+                            </td>
+                            <td>
+                                0560986806
+                            </td>
+                            <td>
+                                Jan, 22, 2018
+                            </td>
+                            <td class="status_cell">
+                                <div>
+                                    Confirmed
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Room 444
+                            </td>
+                            <td>
+                                Shuaib Jamil
+                            </td>
+                            <td>
+                                lazzyrabbit.47@gmail.com
+                            </td>
+                            <td>
+                                0560986806
+                            </td>
+                            <td>
+                                Jan, 22, 2018
+                            </td>
+                            <td class="status_cell">
+                                <div>
+                                    Pending
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hall Meeting<br/>Room
+                            </td>
+                            <td>
+                                Samah Milibary
+                            </td>
+                            <td>
+                                lazzyrabbit.47@gmail.com
+                            </td>
+                            <td>
+                                0560986806
+                            </td>
+                            <td>
+                                Jan, 22, 2018
+                            </td>
+                            <td class="status_cell">
+                                <div>
+                                    Canceled
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Downstairs<br/>Meeting Room
+                            </td>
+                            <td>
+                                Ahmad Ghalab
+                            </td>
+                            <td>
+                                lazzyrabbit.47@gmail.com
+                            </td>
+                            <td>
+                                0560986806
+                            </td>
+                            <td>
+                                Jan, 22, 2018
+                            </td>
+                            <td class="status_cell">
+                                <div>
+                                    Booked
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Students<br/>Offices
+                            </td>
+                            <td>
+                                Tamer Soliman
+                            </td>
+                            <td>
+                                lazzyrabbit.47@gmail.com
+                            </td>
+                            <td>
+                                0560986806
+                            </td>
+                            <td>
+                                Jan, 22, 2018
+                            </td>
+                            <td class="status_cell">
+                                <div>
+                                    Confirmed
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Room 688
+                            </td>
+                            <td>
+                                Dr. Abdullah Murad
+                            </td>
+                            <td>
+                                lazzyrabbit.47@gmail.com
+                            </td>
+                            <td>
+                                0560986806
+                            </td>
+                            <td>
+                                Jan, 22, 2018
+                            </td>
+                            <td class="status_cell">
+                                <div>
+                                    Canceled
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script/my_script.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+html {
+  font-family: DroidArabicKufi;
+  font-size: 10pt;
+}
+
+.user_name_div {
+  text-align: right;
+  margin-left: 20px;
+  font-size: 1.4rem;
+  padding-right: 20px;
+  line-height: 30px;
+  font-weight: $light_font;
+  @include themify($themes) {
+    color: themed("my_white");
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: $bold_font;
+    white-space: nowrap;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+  }
+}
+
+.user_drop_list {
+  .user_drop_list_options {
+    text-align: right;
+    line-height: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        font-weight: $light_font;
+        font-size: 1.6rem;
+        @include themify($themes) {
+          color: themed("my_white");
+        }
+      }
+      .divider {
+        width: 100%;
+        height: 1px;
+        @include themify($themes) {
+          background-color: themed("my_white");
+        }
+      }
+    }
+  }
+}
+
+.side_list {
+  ul {
+    text-align: right;
+    list-style: none;
+    line-height: 110px;
+    margin: 0;
+    padding: 0;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+  }
+  li {
+    .side_list_row {
+      .side_list_a_link {
+        font-size: 2.4rem;
+        margin-right: 50px;
+        text-decoration: none;
+        @include themify($themes) {
+          color: themed("my_white");
+        }
+        font-weight: $bold_font;
+        transition: margin-right 150ms ease-in-out;
+      }
+      &:hover .side_list_a_link {
+        margin-right: 100px;
+      }
+    }
+  }
+}
+.nav_menu {
+  .nav_menu_content_div {
+    .search_bar_div {
+      input {
+        font-family: inherit;
+        outline: none;
+        border: none;
+        width: 550px;
+        height: 50px;
+        border-radius: 30px;
+        padding: 0 20px;
+        font-weight: $light_font;
+        font-size: 1.4rem;
+        &::placeholder {
+          @include themify($themes) {
+            color: themed("primary");
+          }
+          font-weight: $light_font;
+        }
+      }
+    }
+  }
+}
+
+.navigation_a_links_div {
+  a {
+    font-size: 1.6rem;
+    font-weight: $bold_font;
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("primary");
+    }
+  }
+  a:nth-of-type(3) {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}
+.total_link {
+  text-decoration: none;
+  @include themify($themes) {
+    color: themed("primary");
+  }
+  .total_link_div {
+    div {
+      p {
+        margin: 0;
+        padding: 0;
+        font-weight: $bold_font;
+        text-align: right;
+      }
+      .large_number {
+        font-weight: $bold_font;
+        font-size: 6.5rem;
+        line-height: 1;
+      }
+      .large_text {
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-right: 10px;
+        margin-top: 7px;
+      }
+    }
+    div {
+      .bottom_text {
+        font-weight: $light_font;
+        line-height: 1;
+        font-size: 1.4rem;
+        margin-top: 9px;
+      }
+    }
+  }
+}
+.sub_nav {
+  .total_link:nth-child(2) {
+    margin-right: 55px;
+  }
+}
+
+.room_details {
+  text-align: right;
+  h4 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: 0;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+  }
+  p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.5;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+  }
+  h6 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+.room_details p.lighter_text {
+  margin-top: 3px;
+  font-weight: normal;
+}
+.room_status_container {
+  .room_status {
+    font-size: 1rem;
+    font-weight: $bold_font;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+  }
+}

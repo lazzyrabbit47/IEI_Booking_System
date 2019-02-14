@@ -1,0 +1,87 @@
+@import "theme_mixin.scss";
+
+.btn {
+  padding:0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  @include themify($themes) {
+    background-color: themed("primary_lighter");
+  }
+  transition: background-color 80ms ease-in-out, border 80ms ease-in-out,
+    transform 80ms ease-in-out;
+}
+.notification_btn {
+  background-image: url(../images/notificationBell.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-left: 20px;
+}
+
+.user_drop_list_btn {
+  background-image: url(../images/dropDown.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-left: 10px;
+  
+}
+.search_btn {
+  background-image: url(../images/search-icon.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: {
+    x: 50%;
+    y:51%;
+  }
+}
+
+//pseudo class styles
+.btn:active {
+  @include themify($themes) {
+    background-color: themed("primary");
+    border: 2px solid themed("primary_lighter");
+  }
+transform: scale(0.9)
+}
+
+.navigation_a_links_div {
+  button {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: transform 80ms ease-in-out, background-color 80ms ease-in-out;
+    border-style: solid;
+    border-width: 2px;
+    
+    &:active {
+        transform: scale(0.9);
+        background-color: white;
+    }
+  }
+}
+
+button.blue_theme {
+        border-color: #3398ff;
+        background: #3398ff;
+}
+
+button.brown_theme {
+        border-color: #603813;
+        background: #603813;
+}
+button.grey_theme {
+        border-color: #4D4D4D;
+        background: #4D4D4D;
+}
+
+
+
+
+

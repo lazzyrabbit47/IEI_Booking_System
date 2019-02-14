@@ -1,0 +1,205 @@
+html {
+  font-family: Helvetica, Arial;
+  font-size: 10px;
+}
+
+.user_row {
+  .user_name_div {
+    font-size: 1.2rem;
+    font-weight: $light_font;
+
+    p {
+      margin: 0;
+    }
+    a {
+      font-size: 1.6rem;
+      font-weight: $bold_font;
+      text-decoration: none;
+      white-space: nowrap;
+      @include themify($themes) {
+        color: themed("my_white");
+      }
+    }
+  }
+}
+ul.user_drop_list_options {
+  line-height: 80px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    a {
+      font-size: 1.6rem;
+      font-weight: $light_font;
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("my_white");
+      }
+    }
+    .divider {
+      width: 100%;
+      height: 1px;
+      @include themify($themes) {
+        background-color: themed("my_white");
+      }
+    }
+  }
+}
+.side_list {
+  ul {
+    list-style: none;
+    line-height: 110px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.side_list_row {
+  .side_list_a_link {
+    margin-left: 3vw;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+    transition: margin-left 150ms ease-in-out, font-weight 150ms ease-in-out;
+    font-size: 2.4rem;
+    font-weight: $light_font;
+    text-decoration: none;
+  }
+  &:hover .side_list_a_link {
+    margin-left: 6vw;
+    font-weight: $bold_font;  }
+}
+
+.search_bar_div {
+  input {
+    outline: none;
+    border: none;
+    width: 550px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-weight: $light_font;
+    font-size: 1.4rem;
+    &::placeholder {
+      @include themify($themes) {
+        color: themed("primary");
+      }
+      font-weight: $light_font;
+    }
+  }
+}
+
+.navigation_a_links_div {
+  a {
+    font-size: 1.6rem;
+    font-weight: $bold_font;
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("primary");
+    }
+  }
+  a:nth-child(3) {
+    font-family: DroidArabicKufi;
+  }
+}
+.total_link {
+  text-decoration: none;
+  @include themify($themes) {
+    color: themed(primary);
+  }
+}
+.total_link_div {
+  div {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.total_link {
+  .total_link_div {
+    div {
+      .large_text {
+        margin-top: 13px;
+        margin-left: 7px;
+        font-size: 2.5rem;
+        font-weight: $bold_font;
+        line-height: 1.14;
+      }
+    }
+  }
+}
+.large_number {
+  font-size: 6.5rem;
+  font-weight: $bold_font;
+}
+
+.bottom_text {
+  font-size: 1.3rem;
+  font-weight: $light_font;
+}
+.sub_nav {
+  .total_link:nth-child(2) {
+    margin-left: 30px;
+  }
+}
+
+.room_details {
+  h4 {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: $bold_font;
+    margin: 0;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+  }
+  p {
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+    margin: 0;
+  }
+  h6 {
+    margin: 0;
+    font-size: 1.2rem;
+    .lighter_text {
+      font-weight: $light_font;
+    }
+  }
+  .room_date {
+    font-weight: $bold_font;
+    font-size: 1.2rem;
+  }
+}
+.room_status_container {
+  .room_status {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include themify($themes) {
+      color: themed("my_white");
+    }
+    font-size: 1rem;
+    font-weight: $bold_font;
+  }
+}
+
+.booking_list_thead {
+  th {
+    font-size: 1.4rem;
+  }
+}
+.booking_list_tbody {
+  td {
+    font-size: 1.4rem;
+  }
+  td:nth-child(6) {
+    font-size: 1.2rem;
+  }
+}
+.fc-day-number {
+  font-size: 1.4rem;
+}
